@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <div>
-      <span>@copyright by tina savaliya</span>
+      <span>git add .@copyright by tina savaliya</span>
     </div>
   );
 };
