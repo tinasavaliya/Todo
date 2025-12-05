@@ -3,7 +3,9 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <div>
-      <span>git add .@copyright by tina savaliya</span>
+      Footer @copyright by tina savaliya
+      Footer @copyright by tina savaliya
+      Trying to Commit same file at same time 
     </div>
   );
 };
