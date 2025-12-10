@@ -13,6 +13,11 @@ const TodoSchema = new mongoose.Schema({
         type: Boolean, 
         default: false 
     },
+    category: {
+        type: String,
+        enum: ["personal", "work", "study", "other"], 
+        default: "personal"
+    }
 }, {
     timestamps: true,
 })

@@ -11,8 +11,8 @@ export const getTodos = async (req, res) => {
 
 export const createTodo = async (req, res) => {
   try {
-    const { title, description } = req.body;
-    const newTodo = await Todo.create({ title, description });
+    const { title, description, category } = req.body;
+    const newTodo = await Todo.create({ title, description,category });
     res.status(201).json(newTodo);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -22,10 +22,10 @@ export const createTodo = async (req, res) => {
 export const updateTodo = async (req, res) => {
   try {
     const { id } = req.params;
-    const { title, description, completed } = req.body;
+    const { title, description, completed, category } = req.body;
     const updatedTodo = await Todo.findByIdAndUpdate(
       id,
-      { title, description, completed },
+      { title, description, completed, category},
       { new: true }
     );
     res.status(200).json(updatedTodo);
