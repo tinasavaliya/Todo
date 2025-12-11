@@ -1,7 +1,7 @@
 // src/App.tsx
 import React, { useState, useMemo } from "react";
 import { TodoCard } from "../TodoCard";
-import { Header } from "./Header";
+import { Header } from "./Header.components";
 import { TodoControls } from "./TodoControls";
 
 type Status = "pending" | "done";
