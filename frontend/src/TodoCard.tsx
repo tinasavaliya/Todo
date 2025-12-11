@@ -1,5 +1,6 @@
+//src/TodoCard.tsx
 import React, { FC } from "react";
-import "./App.css";
+
 
 type Status = "pending" | "done";
 
